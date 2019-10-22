@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewBag.Title = "Profil";
+    Layout = "~/Views/Shared/_MusteriLayout.cshtml";
+}
+<div class="page-wrapper">
+    <div class="page-container">
+        <div class="main-content">
+            <div class="section__content section__content--p30">
+                <div class="container-fluid">
+                    <div class="row" style="justify-content:center;">
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-header"><h3 class="text-center title-2">Kişisel Bilgilerim</h3></div>
+                                <div class="card-body">
+                                    <form action="" method="post" novalidate="novalidate">
+                                        <div class="form-group">
+                                            <label for="cc-payment" class="control-label mb-1">TCKN:</label>
+                                            <input id="cc-pament" name="cc-payment" type="text" class="form-control" aria-required="true" aria-invalid="false">
+                                        </div>
+                                        <div class="form-group has-success">
+                                            <label for="cc-name" class="control-label mb-1">Telefon:</label>
+                                            <input id="cc-name" name="cc-name" type="text" class="form-control cc-name valid" data-val="true" data-val-required="Please enter the name on card" autocomplete="cc-name" aria-required="true" aria-invalid="false" aria-describedby="cc-name-error">
+                                            <span class="help-block field-validation-valid" data-valmsg-for="cc-name" data-valmsg-replace="true"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="cc-number" class="control-label mb-1">E-mail:</label>
+                                            <input id="cc-number" name="cc-number" type="tel" class="form-control cc-number identified visa" value="" data-val="true" data-val-required="Please enter the card number" data-val-cc-number="Please enter a valid card number" autocomplete="cc-number">
+                                            <span class="help-block" data-valmsg-for="cc-number" data-valmsg-replace="true"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="cc-number" class="control-label mb-1">Kayıt Tarihi:</label>
+                                            <input id="cc-number" name="cc-number" type="tel" class="form-control cc-number identified visa" value="" data-val="true" data-val-required="Please enter the card number" data-val-cc-number="Please enter a valid card number" autocomplete="cc-number">
+                                            <span class="help-block" data-valmsg-for="cc-number" data-valmsg-replace="true"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="cc-number" class="control-label mb-1">Açık Adres</label>
+                                            <input id="cc-number" name="cc-number" type="tel" class="form-control cc-number identified visa" value="" data-val="true" data-val-required="Please enter the card number" data-val-cc-number="Please enter a valid card number" autocomplete="cc-number">
+                                            <span class="help-block" data-valmsg-for="cc-number" data-valmsg-replace="true"></span>
+                                        </div>
+                                        <div>
+                                            <button id="payment-button" type="submit" class="btn btn-lg btn-secondary btn-block">
+                                                <span id="payment-button-amount">GÜNCELLE</span>
+                                            </button>
+                                            <label style="color:#c5002f" for="cc-payment" class="control-label mb-1">Değiştirmek istediğiniz bilgilerinizi değiştirip Güncelle'ye dokunabilirsiniz</label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewBag.Title = "ParaYatirma";
+    Layout = "~/Views/Shared/_MusteriLayout.cshtml";
+}
+
+<div class="page-wrapper">
+    <div class="page-container">
+        <div class="main-content">
+            <div class="section__content section__content--p30">
+                <div class="container-fluid">
+                    <div class="row" style="justify-content:center; align-items:center; align-content:center">
+                        <div class="col-md-7">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3 style="color:#c5002f" class="text-center title-2">Hesap Detayları</h3>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <a>Hesap Numarası:</a>
+                                            <a style="font-weight:bold">100000 - 1001</a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a>Kullanılabilir Bakiye:</a>
+                                            <a style="font-weight:bold; color:#c5002f">100 TL</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3 style="color:#c5002f" class="text-center title-2">Tutar Seçimi</h3>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <input id="cc-pament" name="cc-payment" type="text" class="form-control" aria-required="true" aria-invalid="false" value="100.00">
+                                        </li>
+                                        <li class="list-group-item">
+                                            <button type="button" class="btn btn-outline-success btn-lg btn-block">YATIR</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
