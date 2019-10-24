@@ -141,6 +141,30 @@ namespace BusinessLayer.BLLs
                 }
             }
         }
+        public MusteriDTO GetByTcknPass(string username, string password)
+        {
 
+            using (MusteriRepository musteriRepo = new MusteriRepository())
+            {
+                try
+                {
+                    var model = musteriRepo.GetByFilter(x => x.tckn == username && x.sifre == password, x => x.Hesap, x => x.AcilisPlatformu).ToList();
+                    if (model.Count > 0)
+                    {
+                        return musteriMapper.Map(model[0]);
+                    }
+                    else
+                    {
+                        return null;
+                    }
+
+                }
+                catch
+                {
+                    throw;
+                }
+
+            }
+        }
     }
 }

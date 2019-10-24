@@ -23,28 +23,7 @@ namespace MVCBankProject.Controllers
         [HttpPost]
         public ActionResult Login(string tckn,string sifre)
         {
-            /*HttpClient client = new HttpClient();
-            client.BaseAddress = new Uri("http://localhost:63237/api/");
-            client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
-            client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/x-ww-from-urlencoded"));
-
-            var postData = new Dictionary<string, string>();
-            postData.Add("grant_type", "sifre");
-            postData.Add("username", tckn);
-            postData.Add("sifre", sifre);
-            HttpContent content = new FormUrlEncodedContent(postData);
-            HttpResponseMessage response = client.PostAsync("token", content).Result;
-
-            if (response.IsSuccessStatusCode)
-            {
-                Token token = response.Content.ReadAsAsync<Token>().Result;
-                Session["token"] = token.access_token;
-            }
-            else
-            {
-                return View();
-            }*/
-            return RedirectToAction("Menu", "Musteri");
+            return View();
         }
     }
 }

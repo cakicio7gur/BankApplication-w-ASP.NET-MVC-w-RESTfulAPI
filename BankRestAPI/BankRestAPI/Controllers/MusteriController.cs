@@ -10,6 +10,7 @@ using System.Web.Http;
 
 namespace BankRestAPI.Controllers
 {
+    [Authorize]
     public class MusteriController : ApiController
     {
         public IHttpActionResult Get()
@@ -30,6 +31,13 @@ namespace BankRestAPI.Controllers
         {
             MusteriBLL musteriBusiness = new MusteriBLL();
             var model = musteriBusiness.GetByTcknPassword(tckn,password);
+            return Ok(model);
+        }
+
+        public IHttpActionResult GetByTcknPass(string username, string password)
+        {
+            MusteriBLL musteriBusiness = new MusteriBLL();
+            var model = musteriBusiness.GetByTcknPass(username, password);
             return Ok(model);
         }
 

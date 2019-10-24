@@ -43,4 +43,3 @@ C:\Users\LENOVO\Documents\GitHub\BankApplication-w-ASP.NET-MVC-w-RESTfulAPI\Bank
 C:\Users\LENOVO\Documents\GitHub\BankApplication-w-ASP.NET-MVC-w-RESTfulAPI\BankApp\ModelLayer\obj\Debug\ModelLayer.csproj.CopyComplete
 C:\Users\LENOVO\Documents\GitHub\BankApplication-w-ASP.NET-MVC-w-RESTfulAPI\BankApp\ModelLayer\obj\Debug\ModelLayer.dll
 C:\Users\LENOVO\Documents\GitHub\BankApplication-w-ASP.NET-MVC-w-RESTfulAPI\BankApp\ModelLayer\obj\Debug\ModelLayer.pdb
-C:\Users\LENOVO\Documents\GitHub\BankApplication-w-ASP.NET-MVC-w-RESTfulAPI\BankApp\ModelLayer\obj\Debug\ModelLayer.csprojAssemblyReference.cache

@@ -9,6 +9,7 @@ using System.Web.Http;
 
 namespace BankRestAPI.Controllers
 {
+    [Authorize]
     public class ParaTransferiController : ApiController
     {
         public IHttpActionResult Get()

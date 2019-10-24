@@ -182,11 +182,5 @@ C:\Users\LENOVO\Documents\GitHub\BankApplication-w-ASP.NET-MVC-w-RESTfulAPI\MVCB
 C:\Users\LENOVO\Documents\GitHub\BankApplication-w-ASP.NET-MVC-w-RESTfulAPI\MVCBankProject\MVCBankProject\obj\Debug\MVCBankProject.dll
 C:\Users\LENOVO\Documents\GitHub\BankApplication-w-ASP.NET-MVC-w-RESTfulAPI\MVCBankProject\MVCBankProject\obj\Debug\MVCBankProject.pdb
 C:\Users\LENOVO\Documents\GitHub\BankApplication-w-ASP.NET-MVC-w-RESTfulAPI\MVCBankProject\MVCBankProject\bin\Microsoft.Owin.dll
-C:\Users\LENOVO\Documents\GitHub\BankApplication-w-ASP.NET-MVC-w-RESTfulAPI\MVCBankProject\MVCBankProject\bin\Microsoft.Owin.Host.SystemWeb.dll
-C:\Users\LENOVO\Documents\GitHub\BankApplication-w-ASP.NET-MVC-w-RESTfulAPI\MVCBankProject\MVCBankProject\bin\Microsoft.Owin.Security.dll
-C:\Users\LENOVO\Documents\GitHub\BankApplication-w-ASP.NET-MVC-w-RESTfulAPI\MVCBankProject\MVCBankProject\bin\Microsoft.Owin.Security.OAuth.dll
 C:\Users\LENOVO\Documents\GitHub\BankApplication-w-ASP.NET-MVC-w-RESTfulAPI\MVCBankProject\MVCBankProject\bin\Owin.dll
 C:\Users\LENOVO\Documents\GitHub\BankApplication-w-ASP.NET-MVC-w-RESTfulAPI\MVCBankProject\MVCBankProject\bin\Microsoft.Owin.xml
-C:\Users\LENOVO\Documents\GitHub\BankApplication-w-ASP.NET-MVC-w-RESTfulAPI\MVCBankProject\MVCBankProject\bin\Microsoft.Owin.Host.SystemWeb.xml
-C:\Users\LENOVO\Documents\GitHub\BankApplication-w-ASP.NET-MVC-w-RESTfulAPI\MVCBankProject\MVCBankProject\bin\Microsoft.Owin.Security.xml
-C:\Users\LENOVO\Documents\GitHub\BankApplication-w-ASP.NET-MVC-w-RESTfulAPI\MVCBankProject\MVCBankProject\bin\Microsoft.Owin.Security.OAuth.xml

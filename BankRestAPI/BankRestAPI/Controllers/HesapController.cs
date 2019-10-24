@@ -9,6 +9,7 @@ using System.Web.Http;
 
 namespace BankRestAPI.Controllers
 {
+    [Authorize]
     public class HesapController : ApiController
     {
         public IHttpActionResult Get()

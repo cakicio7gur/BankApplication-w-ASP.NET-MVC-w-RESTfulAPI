@@ -1,0 +1,65 @@
+﻿
+@{
+    ViewBag.Title = "Havale";
+    Layout = "~/Views/Shared/_MusteriLayout.cshtml";
+}
+
+<div class="page-wrapper">
+    <div class="page-container">
+        <div class="main-content">
+            <div class="section__content section__content--p30">
+                <div class="container-fluid">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-header">PARA TRANSFER İŞLEMLERİ</div>
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <h3 style="color:#c5002f" class="text-center title-2">HAVALE</h3>
+                                </div>
+                                <hr>
+                                <form action="" method="post" novalidate="novalidate">
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <div class="form-group">
+                                                <label for="cc-exp" class="control-label mb-1">Alıcı Hesap Seçimi:</label>
+                                                <input id="cc-exp" name="cc-exp" type="tel" class="form-control cc-exp" value="" data-val="true" data-val-required="Please enter the card expiration" data-val-cc-exp="Please enter a valid month and year" placeholder="Bir Hesap Numarası Giriniz..." autocomplete="cc-exp">
+                                                <span class="help-block" data-valmsg-for="cc-exp" data-valmsg-replace="true"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="input-group">
+                                                <label for="cc-exp" class="control-label mb-1"> Alıcı Hesap:</label>                                                      
+                                                <button type="button" class="btn btn-outline-danger btn-block">ARA</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cc-payment" class="control-label mb-1">Gönderen Hesap Seçimi:</label>
+                                        <select name="select" id="select" class="form-control">
+                                            <option value="0">1000011001, 50 TL</option>
+                                            <option value="1">1000011002, 100 TL</option>
+                                            <option value="2">1000011003, 75,67 TL</option>
+                                            <option value="3">1000011004, 42,3 TL</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cc-number" class="control-label mb-1">Tutar Seçimi:</label>
+                                        <input id="cc-number" name="cc-number" type="tel" class="form-control cc-number identified visa" value="" data-val="true" data-val-required="Please enter the card number" data-val-cc-number="Please enter a valid card number" autocomplete="cc-number">
+                                        <span class="help-block" data-valmsg-for="cc-number" data-valmsg-replace="true"></span>
+                                    </div>
+                                    <div>
+                                        <button id="payment-button" type="submit" class="btn btn-lg btn-secondary btn-block">
+                                            <span id="payment-button-amount">DEVAM</span>
+                                            <span id="payment-button-sending" style="display:none;">Sending…</span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -9,6 +9,10 @@ namespace MVCBankProject.Controllers
     public class ParaTransferController : Controller
     {
         // GET: ParaTransfer
+        public ActionResult Havale()
+        {
+            return View();
+        }
         public ActionResult VirmanAliciHesap()
         {
             return View();

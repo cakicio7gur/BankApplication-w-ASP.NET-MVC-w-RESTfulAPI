@@ -76,8 +76,6 @@ namespace DataAccessLayer.Abstraction
             {
                 try
                 {
-
-
                     IQueryable<TEntity> table = db.Set<TEntity>();
                     foreach (var inc in includes)
                     {
@@ -102,9 +100,7 @@ namespace DataAccessLayer.Abstraction
                     foreach (var inc in includes)
                     {
                         table = table.Include(inc);
-                        // burada sadece son değeri  include etmek gibi bir problem oluşabilir dikkat et!
                     }
-
                     return table.Where(id).First();
                 }
                 catch

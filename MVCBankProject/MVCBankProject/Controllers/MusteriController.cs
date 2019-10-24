@@ -12,7 +12,7 @@ namespace MVCBankProject.Controllers
     public class MusteriController : Controller
     {
         // GET: Musteri
-        public ActionResult Hesap(int musteriNo)
+        public ActionResult Hesap(int id)
         {
             IEnumerable<ModelLayer.DTOs.HesapDTO> hesaplar = null;
 
@@ -20,7 +20,7 @@ namespace MVCBankProject.Controllers
             {
                 client.BaseAddress = new Uri("http://localhost:63237/api/");
                 //HTTP GET
-                var responseTask = client.GetAsync("Hesap/GetByMusteriNo?musteriNo=100001");
+                var responseTask = client.GetAsync("Hesap/GetByMusteriNo?musteriNo=" + id.ToString());
                 responseTask.Wait();
 
                 var result = responseTask.Result;

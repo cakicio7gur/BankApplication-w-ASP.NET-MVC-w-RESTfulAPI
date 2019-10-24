@@ -20,6 +20,6 @@ namespace DataAccessLayer.Abstraction
         void Delete(int id);
 
         IEnumerable<TEntity> GetByFilter(Expression<Func<TEntity, bool>> predicate, params Expression<Func<TEntity, object>>[] includes);
-        
+
     }
 }
