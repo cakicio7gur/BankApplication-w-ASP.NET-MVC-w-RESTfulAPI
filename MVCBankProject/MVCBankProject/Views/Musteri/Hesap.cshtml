@@ -1,9 +1,8 @@
-﻿
+﻿@model IEnumerable<ModelLayer.DTOs.HesapDTO>
 @{
     ViewBag.Title = "Hesap";
     Layout = "~/Views/Shared/_MusteriLayout.cshtml";
 }
-
 <div class="page-wrapper">
     <div class="page-container">
         <div class="main-content">
@@ -20,78 +19,26 @@
                         </div>
                     </div>
                     <div class="row m-t-25">
-                        <div class="col-sm-6 col-lg-3">
-                            <div class="overview-item overview-item--c1">
-                                <div class="overview__inner">
-                                    <div class="overview-box clearfix">
-                                        <div class="icon">
-                                            <i class="zmdi zmdi-attachment-alt"></i>
-                                            <div class="text">
-                                                <h3>100001-1001</h3>
+                        @foreach (var item in Model)
+                        {
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="overview-item overview-item--c1">
+                                    <div class="overview__inner">
+                                        <div class="overview-box clearfix">
+                                            <div class="icon">
+                                                <i class="zmdi zmdi-attachment-alt"></i>
+                                                <div class="text">
+                                                    <h3>@Html.DisplayFor(model => item.musteriNo)-@Html.DisplayFor(model => item.ekNo)</h3>
+                                                </div>
                                             </div>
                                         </div>
-
-                                    </div>
-                                    <div class="overview-chart">
-                                        1000TL
+                                        <div class="overview-chart">
+                                            @Html.DisplayFor(model => item.bakiye)
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-3">
-                            <div class="overview-item overview-item--c1">
-                                <div class="overview__inner">
-                                    <div class="overview-box clearfix">
-                                        <div class="icon">
-                                            <i class="zmdi zmdi-attachment-alt"></i>
-                                            <div class="text">
-                                                <h3>100001-1002</h3>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <div class="overview-chart">
-                                        1000TL
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-3">
-                            <div class="overview-item overview-item--c1">
-                                <div class="overview__inner">
-                                    <div class="overview-box clearfix">
-                                        <div class="icon">
-                                            <i class="zmdi zmdi-attachment-alt"></i>
-                                            <div class="text">
-                                                <h3>100001-1003</h3>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <div class="overview-chart">
-                                        1000TL
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-3">
-                            <div class="overview-item overview-item--c1">
-                                <div class="overview__inner">
-                                    <div class="overview-box clearfix">
-                                        <div class="icon">
-                                            <i class="zmdi zmdi-attachment-alt"></i>
-                                            <div class="text">
-                                                <h3>100001-1004</h3>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <div class="overview-chart">
-                                        1000TL
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        }
                     </div>
                 </div>
             </div>

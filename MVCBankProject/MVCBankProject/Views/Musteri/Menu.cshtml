@@ -1,4 +1,4 @@
-﻿
+﻿@model IEnumerable<ModelLayer.DTOs.HesapDTO>
 @{
     ViewBag.Title = "Menu";
     Layout = "~/Views/Shared/_MusteriLayout.cshtml";
@@ -14,7 +14,7 @@
                                 <div class="au-card-inner">
                                     <h3 class="title-2 m-b-40">VARLIKLARIM</h3>
                                     <canvas id="doughutChart"></canvas>
-                                    <h3 class="title-21 m-b-40">10000000000000000000000000000 TL</h3>
+                                    <h3 class="title-21 m-b-40">@ViewBag.toplamBakiye TL</h3>
                                 </div>
                             </div>
                         </div>
